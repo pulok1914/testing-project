@@ -1,0 +1,102 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Font family list
+/// @type List
+$primary-font: 'SF-UI-display', sans-serif;
+$secondary-font: 'Bebas-Neue', sans-serif;
+$second-secondary-font: 'SF-UI-Text', sans-serif;
+
+
+/// font sizes for different width screen
+$triple-extra-large: 70px;
+$double-extra-large: 60px;
+$large: 30px;
+$large-mobile: 32px;
+$medium: 20px;
+$medium-nav: 24px;
+$medium-secondary: 26px;
+$small-secondary: 18px;
+$small: 16px;
+$medium-small: 15px;
+$extra-small: 14px;
+
+
+/// font weight for the website
+// $normal-weight
+$normal: normal;
+$light: 300;
+$medium: 500;
+$bold: bold;
+
+
+/// color scheme for the website
+/// @type Color
+$primary-text-dark: #333333;
+$secondary-text-dark: #4F4F4F;
+$primary-text-white: #FFFFFF;
+$green: #02C4C4;
+$black: #000000;
+$nav-sub-color: #BDBDBD;
+$blue: #2D9CDB;
+
+//background-colors
+$primary-background: #FFFFFF;
+$secondary-background: #F7F7F7;
+$privacy-background: #F8F8F8;
+$secondary-background-light: rgba(247, 247, 247, 0.5);
+$secondary-background-article: #FAFAFA;
+$secondary-background-article-light: rgba(250, 250, 250, 0.5);
+$mobile-nav-background: rgba(229, 229, 229, 1);
+$testimonial-background: #F3F3F3;
+$ar-hero-background: rgba(86, 86, 86, 0.6);
+$hero-background: rgba(0, 0, 0, 0.25);
+$ecoshot-hero-layer-background: linear-gradient(rgba(255, 255, 255, 1) 1% , transparent 99%);
+
+//border-colors
+$primary-border: #BFBFBF;
+$primary-border-light: rgba(191, 191, 191, 0.5);
+$secondary-border: #EAEAEA;
+$green-border: #02C4C4;
+$nav-border: #E0E0E0;
+$case-border: #CBCBCB;
+$icon-border: #C4C4C4;
+$card-border: #DDDDDD;
+$article-border: #ECECEC;
+
+
+
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
