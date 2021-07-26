@@ -1,3 +1,53 @@
 /**
  * Basic typography style for copy text
  */
+
+ body{
+     font-family: $primary-font;
+     font-style: normal;
+     font-weight: normal;
+     position: relative;
+     overflow-x: hidden;
+ }
+
+ .primary-heading{
+     color: $primary-text-white;
+     font-family: $secondary-font;
+     font-size: $extra-large;
+     line-height: 60px;
+     text-transform: uppercase;
+     @include mq(medium){
+         font-size: $triple-extra-large;
+         line-height: 84px;
+     }
+
+     &--dark{
+         color: $primary-text-dark;
+     }
+ }
+
+ .secondary-heading{
+     color: $primary-text-dark;
+     font-family: $secondary-font;
+     font-size: $large;
+     line-height: 48px;
+     text-transform: uppercase;
+     text-align: center;
+     @include mq(medium){
+         font-size: $extra-large;
+         line-height: 60px;
+     }
+
+     &--white{
+         color: $primary-text-white;
+     }
+ }
+
+ .primary-text{
+     color: $secondary-text-dark;
+     font-weight: $light;
+     font-size: $small;
+     line-height: 24px;
+ }
+
+

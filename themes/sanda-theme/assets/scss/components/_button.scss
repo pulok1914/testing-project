@@ -2,3 +2,27 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
+.primary-button{
+    background-color: $button-background;
+    font-weight: $bold;
+    font-size: $small;
+    line-height: 17px;
+    color: $primary-text-white;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 45px 28px 45px;
+}
+
+.secondary-button{
+    background-color: $primary-background-white;
+    font-weight: $bold;
+    font-size: $small;
+    line-height: 17px;
+    color: $orange-text;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px 45px 28px 45px;
+    border: 1px solid $orange;
+}
